@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  postgresdb: 
+    image: postgres
+    environment: 
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: mms
+    ports: 
+      - '5432:5432'
+  app:
+    image: node:alpine
+    container_name: app
+    restart: always
+    depends_on: 
+      - postgresdb
+    ports: 
+      - '3000:3000'
+    volumes: 
+      - .:/usr/app
+    working_dir: /usr/app
+    command: sh -c "yarn install && yarn sequelize db:migrate && yarn dev"
+    logging: 
+      driver: "json-file"
+      options: 
+        max-size: "10m"
+        max-file: "5"

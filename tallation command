@@ -1,0 +1,17 @@
+[33mcommit ba819c2b621eae4f23ff2e455da57e9285ee58fd[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Robson Durval <robson-durval@hotmail.com>
+Date:   Mon Feb 8 21:18:48 2021 -0300
+
+    adding yarn installation command
+
+[33mcommit a4d8afed94620dbda4a2ceeca3f3af2517b66bc9[m
+Author: Robson Durval <robson-durval@hotmail.com>
+Date:   Mon Feb 8 01:57:56 2021 -0300
+
+    migration, database and insertCandles
+
+[33mcommit feca8976c2f85248e1f6786193ae5f5363b43cd6[m
+Author: Robson Durval <robson-durval@hotmail.com>
+Date:   Tue Feb 2 16:45:37 2021 -0300
+
+    create docker file
